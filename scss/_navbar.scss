@@ -1,0 +1,37 @@
+// Aplicando Mixin
+
+@mixin menu {
+    font-size: 30px;
+    font-family: $fonth1;
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    }
+
+    .navbar{
+        @include menu;
+    }
+.navbar-nav {
+        gap: 10px;
+        padding-right: 50px;
+        padding-top: 50px;
+        // **************************AGREGANDO SELECTOR &**********************************
+        .nav-link {
+            color: rgb(255, 255, 255);
+            text-shadow: 2px 2px rgb(1, 1, 2);
+            &:hover {
+                color: green;
+                transition: all 1s ease 0s;
+            }
+        } 
+    
+        }
+    
+.header{
+            position: absolute;
+            z-index: 10;
+            width: 100%;
+        } 
+
+
+

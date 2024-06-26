@@ -1,0 +1,65 @@
+// Aplicando MAPA
+
+$redes:(
+    facebook:white,
+    instagram: white(154, 33, 53),
+    whatsapp: white
+);
+
+@each $redsocial, $color in $redes{
+    .fa-#{$redsocial}{
+        color:$color;
+    }
+}
+
+// Aplicando Map-get
+
+.h3{
+    color: map-get($redes, whatsapp);
+    font-family: 'octin';
+    text-shadow: 2px 2px rgb(1, 1, 2);
+}
+
+
+// Aplicando Extend
+
+.fa-facebook{
+    font-size: 30px;
+    text-shadow: 2px 2px rgb(1, 1, 2);
+    &:hover {
+        color: green;
+        transition: all 1s ease 0s;}
+}
+
+.fa-whatsapp{
+    @extend .fa-facebook;
+}
+.fa-instagram{
+    @extend .fa-facebook;
+}
+
+//Aplicando estilos de texto footer
+
+.h9{
+    font-size: small;
+}
+
+.h6 {
+    font-weight: bolder;
+    text-shadow: 2px 2px rgb(1, 1, 2);
+}
+
+.iconos {
+    display: flex;
+    justify-content:center;
+    gap: 5rem;
+    padding-bottom: 30px;
+}
+
+.logofoot {
+    padding-bottom: 40px;
+}
+
+.footerbs{
+    background-color: rgb(20, 20, 82);
+}

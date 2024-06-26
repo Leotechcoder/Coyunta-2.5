@@ -1,0 +1,18 @@
+@font-face {
+    font-family: "octin";
+    src: url("../font/Octin\ College\ Bold.ttf");
+}
+
+@font-face {
+    font-family: "rg";
+    src: url("../font/octin\ college\ rg.otf");
+}
+
+@font-face {
+    font-family: "sans";
+    src: url("../font/OpenSans-Medium.ttf");
+}
+
+$fonth1: "octin", sans-serif;
+$fonth2: "rg", sans-serif;
+$fonth4: "sans", sans-serif;

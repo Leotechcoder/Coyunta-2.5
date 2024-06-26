@@ -1,0 +1,384 @@
+@import 'footer';
+@import "fonts";
+@import 'navbar';
+
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+// Estilo General
+
+body{
+    background-color: beige;
+    font-family: $fonth4;
+    
+}
+
+.imglogo{
+    filter: drop-shadow(5px 5px 10px #000);
+}
+
+
+
+.col{
+    animation: cartas 3s ease 0s 1 normal forwards;
+}
+
+@keyframes cartas {
+	0% {
+		opacity: 0;
+		transform: translateX(-50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+// Estilo de texto
+
+h1{
+        font-family: $fonth1;
+        font-size: 50px;
+    text-align: center;
+    color: rgb(6, 128, 30);
+        text-shadow: 2px 2px rgb(1, 1, 2);
+        padding-bottom: 50px;
+        animation: h1a 1s ease 0s 1 normal forwards;
+    }
+    
+    @keyframes h1a {
+        0% {
+            opacity: 0;
+            transform: translateX(-250px);
+        }
+    
+        100% {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+
+h2{
+    font-family: $fonth2;
+    color: rgb(9, 53, 9);
+    font-size: 35px;
+    text-align: center;
+}
+
+h4{
+    font-family: $fonth4;
+}
+
+h5{
+    font-family: $fonth2;
+    text-align: center;
+    
+}
+
+.cardtext{
+    font-size: small;
+    text-align: center;
+}
+
+.text{
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 2px rgb(1, 1, 1);
+    font-size: 25px;
+    padding-left: 20px;
+    animation: texto 3s ease 0s 1 normal forwards;
+}
+@keyframes texto {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+.copyr{
+    color: white;
+    font-size: 13px;
+    margin-top: 5px;
+
+}
+
+
+
+// Seccion Nosotros
+
+.containernos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+.nosimg{
+    border-radius: 10px;
+    box-shadow: -7px 5px 20px 1px #000;
+    animation: nosimg 2s ease 0s 1 normal forwards;
+}
+
+@keyframes nosimg {
+	0% {
+		transform: scale(0);
+		transform-origin: 0% 50%;
+	}
+
+	100% {
+		transform: scale(1);
+		transform-origin: 0% 50%;
+	}
+}
+
+// Seccion Contacto
+
+
+.redescon{
+    display: flex;
+    justify-content:center;
+    gap: 5rem;
+    padding-top: 70px;
+    animation: redesicon 3s ease 0s 1 normal forwards;    
+}
+
+@keyframes redesicon {
+    0% {
+        opacity: 0;
+        transform: translateX(-250px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.fa-brands{
+    color: green;
+    font-size: 60px;
+    text-shadow: 1px 1px 1px rgb(1, 1, 2);
+    &:hover {
+        color: rgb(247, 247, 247);
+        transition: all 1s ease 0s;}
+}
+
+.nuestras{
+    font-family: 'octin';
+    font-size: 30px;
+    color: rgb(6, 128, 30);
+    text-shadow: 2px 2px rgb(1, 1, 2);
+}
+
+.envio{
+    color: aqua ;
+}
+
+
+
+
+/********************* Fondo ***********************/
+
+.main {
+    position: relative;
+    background: url(../img/Fondo.png);
+    background-size: cover;
+    background-position: center;
+    min-height: 50vh;
+    margin-bottom: 100px;
+    filter: drop-shadow(-3px -10px 40px #000);
+    }
+
+
+
+
+// Carrusel
+
+    .carousel-inner{
+        border-radius: 20px;
+        filter: drop-shadow(5px 5px 5px #000);
+    }
+
+    // Grid
+
+    .grida{
+        border-radius: 20px;
+        opacity: 0.7;
+        filter: drop-shadow(1px 1px 5px #000);
+    }
+    .grida:hover{
+        transform: scale(1.1);
+        opacity: 1;
+        transition: all 1.5s ease 0s;
+    }
+    
+    .gridimg{
+        border-radius: 10px;
+    }
+
+/************** Mapa / Ubicacion******************/
+
+
+
+.mapa{
+    margin-top: 100px;
+    
+}
+
+.localizacionimg{
+    border-radius: 10px;
+    box-shadow: -7px 5px 20px 1px #000;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+}
+
+@keyframes myAnim {
+	0% {
+		opacity: 0;
+		transform: translateY(50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.datubi{
+    display: flex;
+    padding-left: 1200px;
+   font-family: 'octin';
+   color: green;
+   text-shadow: 1px 1px rgb(1, 1, 1);
+   font-size: 22px;
+}
+
+.cartitas{
+    filter: drop-shadow(1px 1px 5px #000);
+
+}
+
+.imgloca1{
+    margin-right: 200px;
+    margin-bottom: 200px;
+   
+
+}
+
+.imgloca2{
+margin-top: 50px;
+
+}
+
+.direubi{
+    font-size: 25px;
+    font-family: 'octin';
+}
+
+.fa-location-pin{
+    font-size: 30px;
+    color: rgba(0, 128, 0, 0.699);
+    text-shadow: 1px 1px rgb(1, 1, 1);
+
+}
+
+.direccion{
+  margin-top: 100px;
+}
+
+
+
+/**************Media Queris *********************/
+@media only screen and (max-width: 1200px) {
+    .navbar{
+        font-size: 25px;
+    }
+    
+
+    .h9{
+        font-size: x-small;
+    }
+
+    .text {
+        font-size:medium;
+
+    }
+
+    .iframe{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .imgloca1{
+        margin-right: 0px;
+        margin-bottom: 0px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .containernos{
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar-brand{
+        width: 250px;
+    }
+    .navbar-nav{
+        
+        gap: 5px;
+        padding-top: 3px;
+    }
+    .text {
+        padding-top: 20px;
+    }
+
+
+   
+    
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+  
+   
+
+
+    .fa-brands{
+        font-size: 40px;
+    }
+  
+
+    h1{
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    .nuestras{
+        display: none;
+    }
+   
+
+    span{
+        font-size:x-small;
+    }
+    .iconos{
+        gap: 2rem;
+    }
+    .navbar{
+        font-size: 20px;
+    }
+
+}
+
+
+
