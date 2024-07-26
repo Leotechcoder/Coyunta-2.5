@@ -70,6 +70,11 @@
   font-family: "sans";
   src: url("../font/OpenSans-Medium.ttf");
 }
+
+.navbar-toggler{
+  background-color: rgb(211, 211, 98);
+}
+
 .navbar {
   font-size: 20px;
   font-family: "octin", sans-serif;
