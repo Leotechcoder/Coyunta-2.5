@@ -71,7 +71,7 @@
   src: url("../font/OpenSans-Medium.ttf");
 }
 .navbar {
-  font-size: 30px;
+  font-size: 20px;
   font-family: "octin", sans-serif;
   position: absolute;
   z-index: 10;
@@ -84,11 +84,12 @@
   padding-top: 50px;
 }
 .navbar-nav .nav-link {
-  color: rgb(255, 255, 255);
+  background-color: antiquewhite;
+  color: rgb(83, 73, 73);
   text-shadow: 3px 3px 2px rgb(1, 1, 2);
 }
 .navbar-nav .nav-link:hover {
-  color: green;
+  color: rgb(0, 2, 128);
   transition: all 1s ease 0s;
 }
 
@@ -315,6 +316,7 @@ h5 {
   background: url(../img/Fondo.png);
   background-size: cover;
   background-position: center;
+  opacity: .7;
   min-height: 50vh;
   margin-bottom: 100px;
   filter: drop-shadow(-3px -10px 40px #000);
@@ -469,3 +471,6 @@ h5 {
     font-size: 20px;
   }
 }/*# sourceMappingURL=estilo.css.map */
+
+/*aplico tipografia*/
+
