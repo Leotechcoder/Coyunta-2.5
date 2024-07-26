@@ -318,7 +318,7 @@ h5 {
 /********************* Fondo ***********************/
 .main {
   position: relative;
-  background: url(../img/Fondo.png);
+  background: url(../img/Fondo.png), url(/img/ArenaEnBolsa.jpg);
   background-size: cover;
   background-position: center;
   opacity: .7;
